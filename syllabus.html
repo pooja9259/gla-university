@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syllabus - GLA UNIVERSITY</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+header{background:#fff;padding:12px 25px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:20;box-shadow:0 2px 12px rgba(0,0,0,0.07)}
+.logo-area{display:flex;align-items:center;gap:10px}
+.logo-circle{width:55px;height:55px;background:#0f2e1e;border:3px solid #c19a2b;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#f7d98f;font-weight:800;font-size:8px;text-align:center;line-height:1.1}
+.logo-text h1{font-size:18px;color:#0f2e1e;font-weight:800;line-height:1}
+.logo-text p{font-size:9px;color:#c19a2b;letter-spacing:1px;font-weight:700}
+nav a{margin-left:12px;text-decoration:none;color:#0f2e1e;font-weight:600;font-size:11px;padding-bottom:3px}
+nav a.active, nav a:hover{color:#c19a2b;border-bottom:2px solid #c19a2b}
+.page-hero{background:#0f2e1e;padding:35px 40px;color:#fff}
+.page-hero h1{font-size:32px;color:#f7d98f} .page-hero p{color:#cfe5d6;margin-top:6px;font-size:12px}
+.container{padding:25px 35px;background:#fcfbf7}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.tab{padding:8px 14px;border:1px solid #ddd;background:#fff;border-radius:20px;font-size:11px;font-weight:600;cursor:pointer}
+.tab.active{background:#0f2e1e;color:#f7d98f;border-color:#0f2e1e}
+.syllabus-card{background:#fff;border:1px solid #eee;border-radius:14px;padding:22px;margin-bottom:20px;box-shadow:0 4px 15px rgba(0,0,0,0.05);display:none}
+.syllabus-card.active{display:block}
+.teacher-bar{background:#0f2e1e;color:#fff;padding:12px 16px;border-radius:10px;display:flex;align-items:center;gap:10px;margin-bottom:15px}
+.avatar{width:36px;height:36px;background:#f7d98f;color:#0f2e1e;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px}
+.teacher-bar h3{font-size:13.5px;color:#f7d98f} .teacher-bar span{font-size:10px;color:#cfe5d6}
+.subject-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+.subject-head h2{color:#0f2e1e;font-size:16px} .meta{font-size:10px;color:#fff;background:#c19a2b;padding:4px 8px;border-radius:20px}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:12px}
+th{background:#f9f6eb;color:#0f2e1e;padding:10px;text-align:left;border:1px solid #e5d5a5;font-size:11px}
+td{padding:10px;border:1px solid #eee;vertical-align:top;line-height:1.6;color:#444}
+.objective{background:#f9f6eb;padding:12px;border-radius:8px;font-size:11.5px;color:#333;margin:12px 0;border-left:4px solid #c19a2b}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo-area"><div class="logo-circle">GLA<br>UNIVERSITY</div><div class="logo-text"><h1>GLA UNIVERSITY</h1><p>ESTD. 2010</p></div></div>
+  <nav>
+    <a href="./index.html">Home</a><a href="./about.html">About</a><a href="./courses.html">Courses</a>
+    <a href="./syllabus.html" class="active">Syllabus</a><a href="./faculty.html">Faculty</a><a href="./admission.html">Admission</a>
+  </nav>
+</header>
+<div class="page-hero"><h1>B.Tech CSE - Semester 1 Syllabus</h1><p>Session 2024-25 • All Subjects as per GLA University Portal</p></div>
+<div class="container">
+<div class="tabs">
+<div class="tab active" onclick="showTab(0)">Emerging Tech</div><div class="tab" onclick="showTab(1)">Engg. Calculus</div><div class="tab" onclick="showTab(2)">Computer Prog.</div><div class="tab" onclick="showTab(3)">Engg. Chemistry</div><div class="tab" onclick="showTab(4)">English Comm.</div><div class="tab" onclick="showTab(5)">Digital Electronics</div>
+</div>
+
+<div class="syllabus-card active">
+<div class="teacher-bar"><div class="avatar">BP</div><div><h3>Beena Pal Mam</h3><span>Faculty - Emerging Technology</span></div></div>
+<div class="subject-head"><h2>BCSC0016: EMERGING TECHNOLOGY-I</h2><div class="meta">Credits: 02 | L-T-P-J: 2-0-0-0</div></div>
+<div class="objective"><b>Objective:</b> Introducing and understanding new and evolving technologies that are transforming industries.</div>
+<table><tr><th>Module</th><th>Content</th><th>Hours</th></tr>
+<tr><td><b>I</b></td><td><b>Data Science:</b> Descriptive Stats, Model Evaluation, Big Data, Hadoop, Apache Ecosystem.<br><br><b>ML & Gen AI:</b> Supervised, Unsupervised, Deep Learning, CNN, RNN, Transformer, GPT, Image/Text/Music Generation</td><td>12</td></tr>
+<tr><td><b>II</b></td><td><b>Cloud Computing:</b> SaaS, PaaS, IaaS, AWS, Azure, Google Cloud.<br><br><b>DevOps:</b> CI/CD, Jenkins, Docker, Ansible, Terraform, Real-world Case Studies</td><td>12</td></tr></table>
+</div>
+
+<div class="syllabus-card">
+<div class="teacher-bar"><div class="avatar">MS</div><div><h3>Mohit Sir</h3><span>Faculty - Engineering Calculus</span></div></div>
+<div class="subject-head"><h2>BMAS 0104: ENGINEERING CALCULUS</h2><div class="meta">Credits: 04 | Sem I | L-T-P-J: 3-1-0-0</div></div>
+<div class="objective"><b>Objective:</b> To understand differential, integral and vector calculus with engineering applications.</div>
+<table><tr><th>Module</th><th>Contents</th><th>Hours</th></tr>
+<tr><td><b>I</b></td><td><b>Differential Calculus:</b> nth order derivatives, Leibnitz theorem, Partial derivatives, Euler's theorem, Jacobian, Extrema using Lagrange's method.</td><td>20</td></tr>
+<tr><td><b>II</b></td><td><b>Integral & Vector Calculus:</b> Beta Gamma functions, Double Triple integrals, Gradient, Divergence, Curl, Green's, Gauss & Stoke's theorem.</td><td>20</td></tr></table>
+</div>
+
+<div class="syllabus-card">
+<div class="teacher-bar"><div class="avatar">PM</div><div><h3>Pragya Mam</h3><span>Faculty - Computer Programming</span></div></div>
+<div class="subject-head"><h2>BCSG 0802: COMPUTER PROGRAMMING-I</h2><div class="meta">Credits:04 | L-T-P-J: 0-0-8-0</div></div>
+<div class="objective"><b>Objective:</b> To develop programming skills using C Language concepts.</div>
+<table><tr><th>Module</th><th>Content</th><th>Hours</th></tr>
+<tr><td><b>I</b></td><td>Programming Languages, Compiler, Algorithm, Flowchart, Basics of C, Data types, Operators, if-else, switch, Loops, Arrays, Strings, Searching & Sorting</td><td>25</td></tr>
+<tr><td><b>II</b></td><td>Functions, Storage Classes, Recursion, Preprocessor, Pointers, Dynamic Memory, Structures, Union, File Handling</td><td>25</td></tr></table>
+</div>
+
+<div class="syllabus-card">
+<div class="teacher-bar"><div class="avatar">PG</div><div><h3>Pankaj Garg Sir</h3><span>Faculty - Engineering Chemistry</span></div></div>
+<div class="subject-head"><h2>Science for Engineers II</h2><div class="meta">Credits: 02 | Sem I/II | L-T-P-J: 2-0-0-0</div></div>
+<table><tr><th>Module</th><th>Content</th><th>Hours</th></tr>
+<tr><td><b>I</b></td><td><b>Electrolysis:</b> Redox reactions, Li-Ion & Lead-acid battery, Corrosion.<br><b>Materials Science:</b> Carbon nanotube, Dielectric, piezo ceramics.<br><b>Bioinformatics & Polymers:</b> Protein/DNA, PI & PANI for flexible display</td><td>16</td></tr>
+<tr><td><b>II</b></td><td>Environmental Issues & Computing: Green technology, E-waste management, Semiconductors, Sustainable Technologies, Smart systems</td><td>16</td></tr></table>
+</div>
+
+<div class="syllabus-card">
+<div class="teacher-bar"><div class="avatar">HR</div><div><h3>Mohd. Hamid Raza Sir</h3><span>Faculty - English Communication</span></div></div>
+<div class="subject-head"><h2>BELH 0811: English Communication Skills I</h2><div class="meta">Credits: 02 | Sem I | L-T-P-J: 0-0-4</div></div>
+<div class="objective"><b>Objective:</b> To develop listening, speaking, reading and writing proficiency in English.</div>
+<table><tr><th>Module</th><th>Content</th><th>Hours</th></tr>
+<tr><td><b>I</b></td><td>Articulation & Pronunciation (IPA), Self-Introduction, Listening via TED Talk, Describing places/people/objects, Role Plays</td><td>24</td></tr>
+<tr><td><b>II</b></td><td>Extempore Speech, Film Review, Debating Skills, PPT Presentation, Vocabulary games, Interpreting Graphs</td><td>28</td></tr></table>
+</div>
+
+<div class="syllabus-card">
+<div class="teacher-bar"><div class="avatar">JM</div><div><h3>Jharna Mam</h3><span>Faculty - Digital Electronics</span></div></div>
+<div class="subject-head"><h2>BECC0010: DIGITAL ELECTRONICS</h2><div class="meta">Credits:3 | L-T-P: 3-0-0-0</div></div>
+<div class="objective"><b>Objective:</b> To learn fundamentals of digital logic design and logic simplification.</div>
+<table><tr><th>Module</th><th>Contents</th><th>Hours</th></tr>
+<tr><td><b>I</b></td><td>Binary numbers, Number conversion, Codes (8421, Excess-3, Gray), Hamming code, Logic gates, SOP/POS, KMap, Adders, Subtractor, Multiplexer, Decoder</td><td>20</td></tr>
+<tr><td><b>II</b></td><td>Flip-flops (SR, JK, D, T), Mealy & Moore machines, Registers (SISO, SIPO, PIPO), Counters (Ripple, Synchronous), Memory - RAM, ROM, PLA, PAL</td><td>20</td></tr></table>
+</div>
+
+</div>
+<script>
+function showTab(i){
+document.querySelectorAll('.tab').forEach((t,idx)=>t.classList.toggle('active', idx===i));
+document.querySelectorAll('.syllabus-card').forEach((c,idx)=>c.classList.toggle('active', idx===i));
+}
+</script>
+</body>
+</html>

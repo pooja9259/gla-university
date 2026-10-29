@@ -1,0 +1,16 @@
+:root{--p:#0a3d2e; --s:#ffcc00; --glow:#00ffc6;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#070f1a;color:#fff}
+header{background:rgba(10,61,46,0.95);padding:12px 35px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;border-bottom:2px solid var(--s)}
+.logo{font-size:26px;font-weight:800} .logo span{color:var(--s)}
+nav a{color:#fff;text-decoration:none;margin-left:18px;padding:7px 14px;border-radius:20px;font-weight:600;font-size:14px}
+nav a.active, nav a:hover{background:var(--s);color:var(--p)}
+.hero{height:85vh;background:linear-gradient(90deg,#070f1a 35%,transparent), url('https://images.unsplash.com/photo-1497366811353-26cc3f8fa5fa');background-size:cover;display:flex;align-items:center;padding:0 60px}
+.hero h1{font-size:58px;line-height:1} .hero h1 span{color:var(--s)}
+.clock{background:var(--s);color:var(--p);padding:10px 22px;border-radius:30px;font-weight:800;display:inline-block;margin-top:20px;letter-spacing:2px}
+.container{max-width:1200px;margin:auto;padding:50px 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#10233f;border:1px solid rgba(0,255,198,0.15);padding:22px;border-radius:16px;transition:0.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--glow);box-shadow:0 10px 25px rgba(0,255,198,0.15)}
+table{width:100%;border-collapse:collapse;background:#fff;color:#000;border-radius:10px;overflow:hidden} th{background:var(--p);color:#fff;padding:12px} td{padding:12px;border-bottom:1px solid #ddd}
+footer{background:#000;text-align:center;padding:15px;margin-top:30px;color:#aaa}
